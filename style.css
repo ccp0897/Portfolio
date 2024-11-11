@@ -69,6 +69,7 @@ body {
     --transform-list-menu: translate(0);
 }
 
+/*Seccion donde se usa flex para colocar los elementos del header con space-between*/
 header{
     display: flex;
     justify-content: space-between;
@@ -259,12 +260,12 @@ ul.nav__list {
 }
 
 
-
+/*Seccion donde se usa flex para colocar el contenido de la parte del home de la página en este caso se coloca por columnas y al final*/
 .home-content{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    text-align: right;
+    text-align: justify;
     border: var(--text-color-white) solid 1px;
     border-radius: 1.5rem;
     width: min(95%, 450px);
@@ -314,7 +315,7 @@ ul.nav__list {
                0 0 50px var(--main-color),
                0 0 100px var(--main-color);
 }
-
+/*Seccion donde se usa flex para colocar los iconos de las redes sociales*/
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -415,7 +416,9 @@ ul.nav__list {
     transition: 0.4s ease-in-out;  
     margin: 3rem;
 }
-
+.about-content h3{
+    font-size: 3rem;
+}
 .about-img img:hover{
     box-shadow:0 0 25px var(--main-color),
                0 0 50px var(--main-color),
@@ -620,7 +623,7 @@ ul.nav__list {
     margin-bottom: 3rem;
     color: var(--text-color-white);
 }
-
+/*Se usa flex para colocar los elementos del formulario*/
 .contact form{
     display: flex;
     align-items: center;
