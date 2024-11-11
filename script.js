@@ -1,4 +1,3 @@
-
 // Controlador de la barra de progreso
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -6,7 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const sunIcon = document.getElementById("sunIcon");
     const paletteIcon = document.getElementById("paletteIcon");
     const colorPicker = document.getElementById("colorPicker");
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.nav');
 
+    menuIcon.onclick = () =>{
+        menuIcon.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+    }
     let isDarkMode = true;
 
     function applyDarkMode() {
